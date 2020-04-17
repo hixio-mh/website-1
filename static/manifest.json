@@ -1,0 +1,39 @@
+{
+  "name":"Pop!_OS by System76",
+  "short_name":"Pop!_OS",
+  "description":"Imagine an OS for the software developer, maker and computer science professional who uses their computer as a tool to discover and create. Welcome to Pop!_OS.",
+  "lang":"en",
+  "background_color":"#F6F6F6",
+  "theme_color":"#6ACAD8",
+  "start_url":"/?standalone=true",
+  "display":"standalone",
+  "icons":[{
+    "src":"/icon-64.png",
+    "sizes":"64x64",
+    "type":"image/png"
+  }, {
+    "src":"/icon-120.png",
+    "sizes":"120x120",
+    "type":"image/png"
+  }, {
+    "src":"/icon-144.png",
+    "sizes":"144x144",
+    "type":"image/png"
+  }, {
+    "src":"/icon-152.png",
+    "sizes":"152x152",
+    "type":"image/png"
+  }, {
+    "src":"/icon-192.png",
+    "sizes":"192x192",
+    "type":"image/png"
+  }, {
+    "src":"/icon-384.png",
+    "sizes":"384x384",
+    "type":"image/png"
+  }, {
+    "src":"/icon-512.png",
+    "sizes":"512x512",
+    "type":"image/png"
+  }]
+}
