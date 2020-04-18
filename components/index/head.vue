@@ -32,55 +32,39 @@
   </section>
 </template>
 
-<style module>
-  .light-mode {
-    background-image: url("~assets/images/index/head-light.png?webp");
-    color: #fff;
-  }
-
-  .light-mode {
-    background-image: url("~assets/images/index/head-light.png");
-    color: #fff;
-  }
-
-  .dark-mode {
-    background-image: url("~assets/images/index/head-dark.png?webp");
-    color: #574F4A;
-  }
-
-  .dark-mode {
-    background-image: url("~assets/images/index/head-dark.png");
-  }
-</style>
-
 <style scoped>
   section {
-    background-origin: center;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    clip-path: ellipse(140% calc(100vw + 6rem) at 50% calc(100% - 6rem - 100vw));
     width: 100%;
+  }
+
+  section.light-mode {
+    background: linear-gradient(#00163d 0%, #001e54 25%, #9acfe1 120%);
+    color: #fff;
+  }
+
+  section.dark-mode {
+    background: linear-gradient(#fff 0%, #fcfbf7 100%);
+    color: #574F4A;
   }
 
   .content {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
     max-width: 1280px;
-    padding: calc(1rem + 3vw) 1rem calc(3rem + 6vw);
+    padding: 2rem 1rem 6rem;
   }
 
   h1 {
-    font-family: var(--font-family-slab);
-    font-size: 2.3375rem;
     margin-top: 0;
   }
 
   .logo {
     display: none;
     filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.35));
-    max-width: 85%;
+    max-width: 100%;
   }
 
   @media (width >= 70rem) {
@@ -102,5 +86,4 @@
       color
     ]
   }
-
 </script>

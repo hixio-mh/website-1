@@ -2,15 +2,13 @@
   <main :class="classes">
     <index-head />
 
-    <div>
-      <button @click.prevent="toggleColor">
-        Toggle Color
-      </button>
-    </div>
+    <index-other-features />
+
+    <index-foot />
   </main>
 </template>
 
-<style module>
+<style scoped>
   .light-mode {
     background-color: #E5E5E5;
     color: #272727;
@@ -23,14 +21,18 @@
 </style>
 
 <script>
+  import IndexFoot from '~/components/index/foot'
   import IndexHead from '~/components/index/head'
+  import IndexOtherFeatures from '~/components/index/other-features'
   import color from '~/mixins/color'
 
   export default {
-
     components: {
-      IndexHead
+      IndexFoot,
+      IndexHead,
+      IndexOtherFeatures
     },
+
     mixins: [
       color
     ]
