@@ -112,7 +112,7 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-rows: repeat(5, auto);
-    margin: 2rem auto;
+    margin: 4rem auto;
     max-width: 1280px;
     padding: 0 1rem;
   }
