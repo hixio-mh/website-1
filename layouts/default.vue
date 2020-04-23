@@ -7,8 +7,10 @@
         </a>
       </template>
 
-      <template v-slot:copy>
-        The new Pop!_OS 20.04!
+      <template v-slot:local>
+        <button>
+          Download
+        </button>
       </template>
     </sys-omnibar>
 

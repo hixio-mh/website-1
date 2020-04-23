@@ -17,12 +17,14 @@
         <img
           v-if="isLight"
           v-lazy="require('~/assets/images/index/other-features-hybrid-light.jpg')"
+          alt="Hybrid graphics menu in Pop!_OS light theme"
           :data-loading="require('~/assets/images/index/other-features-hybrid-light.jpg?lqip')"
           :data-srcset="require('~/assets/images/index/other-features-hybrid-light.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1920').srcSet"
         >
         <img
           v-if="isDark"
           v-lazy="require('~/assets/images/index/other-features-hybrid-dark.jpg')"
+          alt="Hybrid graphics menu in Pop!_OS dark theme"
           :data-loading="require('~/assets/images/index/other-features-hybrid-dark.jpg?lqip')"
           :data-srcset="require('~/assets/images/index/other-features-hybrid-dark.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1920').srcSet"
         >
@@ -57,12 +59,14 @@
         <img
           v-if="isLight"
           v-lazy="require('~/assets/images/index/other-features-dnd-light.jpg')"
+          alt="Do not disturb toggle in Pop!_OS light theme"
           :data-loading="require('~/assets/images/index/other-features-dnd-light.jpg?lqip')"
           :data-srcset="require('~/assets/images/index/other-features-dnd-light.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1920').srcSet"
         >
         <img
           v-if="isDark"
           v-lazy="require('~/assets/images/index/other-features-dnd-dark.jpg')"
+          alt="Do not disturb toggle in Pop!_OS dark theme"
           :data-loading="require('~/assets/images/index/other-features-dnd-dark.jpg?lqip')"
           :data-srcset="require('~/assets/images/index/other-features-dnd-dark.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1920').srcSet"
         >
@@ -93,12 +97,14 @@
         <img
           v-if="isLight"
           v-lazy="require('~/assets/images/index/other-features-mode-light.jpg')"
+          alt="Dark mode settings in Pop!_OS light theme"
           :data-loading="require('~/assets/images/index/other-features-mode-light.jpg?lqip')"
           :data-srcset="require('~/assets/images/index/other-features-mode-light.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1920').srcSet"
         >
         <img
           v-if="isDark"
           v-lazy="require('~/assets/images/index/other-features-mode-dark.jpg')"
+          alt="Dark mode settings in Pop!_OS dark theme"
           :data-loading="require('~/assets/images/index/other-features-mode-dark.jpg?lqip')"
           :data-srcset="require('~/assets/images/index/other-features-mode-dark.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000&sizes[]=1920').srcSet"
         >
@@ -205,6 +211,7 @@
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
+    user-select: none;
     width: 100%;
   }
 

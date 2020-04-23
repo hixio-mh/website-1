@@ -236,12 +236,28 @@
     align-content: space-between;
     align-items: space-between;
     display: grid;
-    grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     margin: 1rem auto;
     max-width: 800px;
     padding: 0 1rem;
+    text-align: center;
+    user-select: none;
+  }
+
+  .grid a {
+    border-radius: 3px;
+    outline: none;
+    padding: 15px;
+    transition: box-shadow 250ms ease;
+  }
+
+  .grid a:focus,
+  .grid a:active {
+    box-shadow:
+      inset 0 0 0 1px var(--color-orange),
+      0 0 12px var(--color-orange),
+      0 0 1px var(--color-orange);
   }
 
   .grid img {

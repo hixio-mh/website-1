@@ -90,6 +90,7 @@
   .image {
     align-self: center;
     margin: 0 auto;
+    user-select: none;
   }
 
   .image img {

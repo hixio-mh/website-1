@@ -120,10 +120,10 @@
 
       <div>
         <sys-form-button
-          ref="noopener"
           color="primary"
           ghost
           href="https://support.system76.com/articles/bioinformatics-moritz-beber-dtu"
+          rel="noopener"
           target="_blank"
         >
           See user story
