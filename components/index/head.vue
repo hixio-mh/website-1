@@ -14,7 +14,10 @@
         </sys-paragraph-1>
 
         <div>
-          <sys-form-button color="secondary">
+          <sys-form-button
+            color="secondary"
+            @click.prevent="toggleDownload"
+          >
             Download
           </sys-form-button>
 
@@ -169,6 +172,14 @@
   export default {
     mixins: [
       color
-    ]
+    ],
+
+    methods: {
+      toggleDownload () {
+        // TODO: analytics
+        this.$store.dispatch('download/detectChannel')
+        this.$store.commit('download/toggleShowing')
+      }
+    }
   }
 </script>

@@ -141,7 +141,7 @@
     }
   }
 
-  @media (width >= 130ch) {
+  @media (width >= 150ch) {
     .links a {
       flex: 1 1 20%;
     }

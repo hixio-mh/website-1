@@ -8,7 +8,7 @@
       </template>
 
       <template v-slot:local>
-        <button>
+        <button @click.prevent="toggleDownload">
           Download
         </button>
       </template>
@@ -40,6 +40,13 @@
       url-disclaimer="https://system76.com/disclaimer"
       url-terms="https://system76.com/terms"
     />
+
+    <light-box
+      :active="showing"
+      @input="toggleDownload"
+    >
+      <download-info />
+    </light-box>
   </div>
 </template>
 
@@ -55,3 +62,29 @@
     flex: 1 0 auto;
   }
 </style>
+
+<script>
+  import { mapGetters } from 'vuex'
+
+  import DownloadInfo from '~/components/download-info'
+  import LightBox from '~/components/light-box'
+
+  export default {
+    components: {
+      DownloadInfo,
+      LightBox
+    },
+
+    computed: {
+      ...mapGetters('download', ['showing'])
+    },
+
+    methods: {
+      toggleDownload () {
+        // TODO: Analytics
+        this.$store.dispatch('download/detectChannel')
+        this.$store.commit('download/toggleShowing')
+      }
+    }
+  }
+</script>
