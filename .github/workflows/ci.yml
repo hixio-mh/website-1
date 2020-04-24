@@ -180,5 +180,4 @@ jobs:
         run: |
           aws s3 sync \
             --acl public-read \
-            --delete \
             ./dist/ "s3://$AWS_BUCKET"
