@@ -7,7 +7,7 @@ const NVIDIA_KEYWORDS = [
   'geforce'
 ]
 
-async function fetchRelease(version, channel) {
+async function fetchRelease (version, channel) {
   const res = await fetch(`https://api.pop-os.org/builds/${version}/${channel}`)
   const body = await res.json()
 
@@ -152,6 +152,7 @@ export const mutations = {
     state.channel = value
   },
 
+  // eslint-disable-next-line camelcase
   setData (state, { channel, release, version, url, size, sha_sum }) {
     state.data[release][channel] = { url, size, sha: sha_sum }
   }
@@ -165,7 +166,7 @@ export const actions = {
         const gl = el.getContext('webgl') || el.getContext('experimental-webgl')
 
         if (gl != null) {
-          const info = gl.getExtension('WEBGL_debug_renderer_info');
+          const info = gl.getExtension('WEBGL_debug_renderer_info')
 
           if (info != null) {
             const renderer = gl.getParameter(info.UNMASKED_RENDERER_WEBGL)

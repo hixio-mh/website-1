@@ -201,9 +201,9 @@
 </style>
 
 <script>
-  import { mapGetters, mapMutations, mapActions } from 'vuex'
   import { faSpinner } from '@fortawesome/free-solid-svg-icons'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+  import { mapGetters, mapMutations, mapActions } from 'vuex'
 
   import color from '~/mixins/color'
 
