@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@aceforth/nuxt-optimized-images": "^1.0.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@nuxtjs/color-mode": "^1.0.0",
     "@nuxtjs/google-analytics": "^2.2.3",
     "@system76/components": "^1.1.7",
