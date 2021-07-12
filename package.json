@@ -24,7 +24,7 @@
     "@system76/forms": "^2.11.2",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.1.0",
+    "imagemin-svgo": "^9.0.0",
     "lqip-loader": "^2.2.0",
     "nuxt": "^2.0.0",
     "responsive-loader": "^1.2.0",
