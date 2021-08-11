@@ -38,7 +38,7 @@
     "@system76/eslint-config": "^3.0.0",
     "eslint": "^6.8.0",
     "eslint-plugin-testcafe": "^0.2.1",
-    "http-server": "^0.12.1",
+    "http-server": "^0.13.0",
     "testcafe": "^1.8.4"
   }
 }
